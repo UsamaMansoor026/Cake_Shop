@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [mobileNav, setMobileNav] = useState(false);
@@ -10,7 +11,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="px-16 lg:px-7 py-7 relative">
+      <header className="Xpadding py-7 relative">
         <div className="flex items-center justify-between">
           {/* Social Links */}
           <ul className="flex items-center gap-5">
@@ -30,15 +31,13 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
-          <h1 className="shopName text-6xl italic text-primary-color cursor-pointer">
+          <h1 className="shopName text-4xl md:text-5xl lg:text-6xl italic text-primary-color cursor-pointer">
             Maan Cakes
           </h1>
           <div className="hidden lg:block">
-            <Button
-              text="Call Us: +92 334 5137178"
-              bgColor="transparent"
-              border="true"
-            />
+            <Button bgColor={false} border={true}>
+              Call Us: +92 334 5137178
+            </Button>
           </div>
         </div>
 
@@ -48,11 +47,21 @@ const Navbar = () => {
             mobileNav ? "active" : "inactive"
           } navList hidden lg:flex items-center justify-center gap-6 mt-10 mb-5`}
         >
-          <li className="link afterLine">Home</li>
-          <li className="link afterLine">cakes</li>
-          <li className="link afterLine">about</li>
-          <li className="link afterLine">blog</li>
-          <li className="link afterLine">contact</li>
+          <li className="link afterLine">
+            <Link to="/">home</Link>
+          </li>
+          <li className="link afterLine">
+            <Link to="/cakes">cakes</Link>
+          </li>
+          <li className="link afterLine">
+            <Link to="/about">about</Link>
+          </li>
+          <li className="link afterLine">
+            <Link to="/">blog</Link>
+          </li>
+          <li className="link afterLine">
+            <Link to="/contact">contact</Link>
+          </li>
         </ul>
       </header>
 

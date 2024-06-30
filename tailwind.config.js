@@ -21,6 +21,9 @@ export default {
           "@apply px-2 text-white relative font-semibold uppercase cursor-pointer hover:text-primary-color":
             "",
         },
+        ".Xpadding": {
+          "@apply px-6 md:px-16 lg:px-7": "",
+        },
       });
     },
   ],
