@@ -32,6 +32,15 @@ const Navbar = () => {
           border="true"
         />
       </div>
+
+      {/* Links */}
+      <ul>
+        <li>Home</li>
+        <li>cakes</li>
+        <li>about</li>
+        <li>blog</li>
+        <li>contact</li>
+      </ul>
     </header>
   );
 };
