@@ -2,6 +2,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,4 +19,50 @@
 
 .icon:hover {
   transform: rotateY(180deg);
+}
+
+.navList > li,
+strong {
+  font-family: "Jost", sans-serif !important;
+}
+
+.active {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  position: absolute;
+  left: 0px;
+  right: 0;
+  top: calc(100% + 10px);
+  padding: 20px;
+  background: #4c4c4c;
+  z-index: 1000;
+  animation: topDown 400ms;
+}
+
+@keyframes topDown {
+  from {
+    opacity: 0;
+    top: 0;
+  }
+  to {
+    opacity: 1;
+    top: calc(100% + 10px);
+  }
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -9px;
+  width: 0;
+  height: 1px;
+  background: #e5bf4a;
+  transition: 300ms;
+}
+
+.link:hover::after {
+  width: 100%;
 }
