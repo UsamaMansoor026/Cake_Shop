@@ -7,7 +7,7 @@ import Carousal from "../components/Carousal";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Banner>
         <div className="absolute left-0 right-0 top-0 bottom-0 w-full bg-black/40"></div>
         <div className="container flex gap-8 pl-24 py-36 flex-col">
@@ -21,6 +21,7 @@ const Home = () => {
         </div>
       </Banner>
 
+      {/* Hero Sub Section */}
       <section className="py-20">
         <h1 className="w-[70%] lg:w-[40%] text-center mx-auto text-[26px] md:text-[30px] lg:text-[40px] leading-[1.3]">
           This is Schilers. Awesome Food Theme. Purchase it and eat Burgers.
@@ -58,7 +59,21 @@ const Home = () => {
 
       {/* Cart Items */}
       <Carousal />
-    </div>
+
+      {/* Video Section */}
+      <div className="py-9 mx-6 md:mx-16 lg:mx-24 relative">
+        <img
+          className="w-full object-cover aspect-video"
+          src={galleryImages.Gallery3}
+          alt=""
+        />
+        <span className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-primary-color p-5 md:p-7 lg:p-9 rounded-full text-2xl md:text-4xl text-light-black flex justify-center items-center cursor-pointer hover:bg-white hover:text-primary-color duration-200">
+          <ion-icon name="play-sharp"></ion-icon>
+        </span>
+      </div>
+
+      {/* Testimonials section */}
+    </>
   );
 };
 

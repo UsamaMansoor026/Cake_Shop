@@ -6,6 +6,9 @@ import Gallery3 from "./video-bg.jpg";
 import item1 from "./items1.jpg";
 import item2 from "./items2.jpg";
 import item3 from "./items3.jpg";
+import item4 from "./chocolate cake with strawberry.jpg";
+import item5 from "./chocolate cake.jpg";
+import item6 from "./donut.jpg";
 
 /* Insta */
 import insta1 from "./instra1.jpg";
@@ -45,6 +48,24 @@ export const cartItems = [
     id: 3,
     name: "Surprice Sweet",
     image: item3,
+    price: "99.00",
+  },
+  {
+    id: 4,
+    name: "Choco Cake with Strawberry",
+    image: item4,
+    price: "98.00",
+  },
+  {
+    id: 5,
+    name: "Choco Cake",
+    image: item5,
+    price: "90.00",
+  },
+  {
+    id: 6,
+    name: "Donut",
+    image: item6,
     price: "99.00",
   },
 ];

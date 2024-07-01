@@ -95,7 +95,34 @@ strong {
   }
 }
 
+/* Slider */
+.slick-arrow {
+  z-index: 1000 !important;
+  border-radius: 50% !important;
+}
+
+.slick-prev {
+  left: -30px !important;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  font-size: 30px !important;
+  color: #e5bf4a !important;
+  filter: drop-shadow(0 0 17px #aa8e3a);
+}
+
 /* Media Queries */
+@media screen and (max-width: 768px) {
+  .slick-prev {
+    left: 20px !important;
+  }
+
+  .slick-next {
+    right: 25px !important;
+  }
+}
+
 @media screen and (max-width: 590px) {
   .container {
     padding: 60px 40px;
