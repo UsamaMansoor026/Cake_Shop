@@ -10,7 +10,7 @@ const Button = ({ children, bgColor, border }) => {
             : "bg-transparent hover:bg-primary-color hover:text-white"
         } ${
           border ? "border border-primary-color" : "border-none"
-        } py-2 px-6 text-primary-color font-bold duration-300 `}
+        } py-2 px-6 text-primary-color font-bold duration-300 relative z-[500]`}
       >
         {children}
       </button>
