@@ -4,6 +4,7 @@ import Banner from "../components/Banner";
 import Button from "../components/Button";
 import { galleryImages } from "../assets/assets";
 import Carousal from "../components/Carousal";
+import Testimonial from "../components/Testimonial";
 
 const Home = () => {
   return (
@@ -73,6 +74,7 @@ const Home = () => {
       </div>
 
       {/* Testimonials section */}
+      <Testimonial />
     </>
   );
 };
