@@ -149,4 +149,20 @@ strong {
   .testimonial {
     grid-template-columns: 1fr;
   }
+
+  .dash {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-inline: 10px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .customResponsive {
+    margin-inline: 12px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+  }
 }

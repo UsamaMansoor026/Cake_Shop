@@ -5,6 +5,8 @@ import Button from "../components/Button";
 import { galleryImages } from "../assets/assets";
 import Carousal from "../components/Carousal";
 import Testimonial from "../components/Testimonial";
+import Blogs from "../components/Blogs";
+import InstagramGallery from "../components/InstagramGallery";
 
 const Home = () => {
   return (
@@ -75,6 +77,12 @@ const Home = () => {
 
       {/* Testimonials section */}
       <Testimonial />
+
+      {/* Blogs Section */}
+      <Blogs />
+
+      {/* Imstagram Gallery */}
+      <InstagramGallery />
     </>
   );
 };

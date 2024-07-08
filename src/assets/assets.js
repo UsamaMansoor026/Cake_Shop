@@ -70,17 +70,29 @@ export const cartItems = [
   },
 ];
 
-export const instaImgGallery = {
-  insta1,
-  insta2,
-  insta3,
-  insta4,
-};
+export const instaImgGallery = [
+  { image: insta1 },
+  { image: insta2 },
+  { image: insta3 },
+  { image: insta4 },
+];
 
-export const blogsimages = {
-  blog1,
-  blog2,
-};
+export const blogs = [
+  {
+    id: 1,
+    image: blog1,
+    blogTitle: "Tomato, black olive, feta & anchovy tart ulla mco laboris",
+    blogContent:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita tion ullamco laboris nisi ut aliquip.",
+  },
+  {
+    id: 2,
+    image: blog2,
+    blogTitle: "Tomato, black olive, feta & anchovy tart ulla mco laboris",
+    blogContent:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita tion ullamco laboris nisi ut aliquip.",
+  },
+];
 
 export const customersTestimonial = [
   {
