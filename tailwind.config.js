@@ -24,6 +24,13 @@ export default {
         ".Xpadding": {
           "@apply px-6 md:px-16 lg:px-7": "",
         },
+        ".inputs": {
+          "@apply bg-transparent w-full text-[#E5BF4A] border border-[#E5BF4A] py-3 px-4 outline-none placeholder:text-[#E5BF4A]":
+            "",
+        },
+        ".textarea": {
+          "@apply max-h-[130px] min-h-[130px]": "",
+        },
       });
     },
   ],

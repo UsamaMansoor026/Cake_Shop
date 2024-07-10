@@ -9,6 +9,10 @@ const Navbar = () => {
     setMobileNav(!mobileNav);
   };
 
+  const handleOff = () => {
+    setMobileNav(false);
+  };
+
   return (
     <>
       <header className="Xpadding py-7 relative">
@@ -31,8 +35,8 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
-          <h1 className="shopName text-4xl md:text-5xl lg:text-6xl italic text-primary-color cursor-pointer">
-            Maan Cakes
+          <h1 className="shopName text-[30px] md:text-5xl lg:text-[55px] italic text-primary-color cursor-pointer">
+            The Cake Alchemist
           </h1>
           <div className="hidden lg:block">
             <Button bgColor={false} border={true}>
@@ -47,20 +51,20 @@ const Navbar = () => {
             mobileNav ? "active" : "inactive"
           } navList hidden lg:flex items-center justify-center gap-6 mt-10 mb-5`}
         >
-          <li className="link afterLine">
+          <li onClick={handleOff} className="link afterLine">
             <Link to="/">home</Link>
           </li>
-          <li className="link afterLine">
-            <Link to="/cakes">cakes</Link>
+          <li onClick={handleOff} className="link afterLine">
+            <a href="#about">about</a>
           </li>
-          <li className="link afterLine">
-            <Link to="/about">about</Link>
+          <li onClick={handleOff} className="link afterLine">
+            <a href="#cakes">cakes</a>
           </li>
-          <li className="link afterLine">
-            <Link to="/">blog</Link>
+          <li onClick={handleOff} className="link afterLine">
+            <a href="#blog">blog</a>
           </li>
-          <li className="link afterLine">
-            <Link to="/contact">contact</Link>
+          <li onClick={handleOff} className="link afterLine">
+            <a href="#contact">contact</a>
           </li>
         </ul>
       </header>
@@ -71,7 +75,7 @@ const Navbar = () => {
           <strong className="uppercase">Menu</strong>
           <span
             onClick={handleNav}
-            className="flex justify-center items-center text-xl"
+            className="flex justify-center items-center text-xl cursor-pointer"
           >
             <ion-icon name="menu"></ion-icon>
           </span>

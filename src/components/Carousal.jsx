@@ -36,7 +36,7 @@ const Carousal = () => {
   };
 
   return (
-    <div className="mx-4 md:mx-16 lg:mx-28">
+    <div id="cakes" className="mx-4 md:mx-16 lg:mx-28">
       <Slider {...settings}>
         {cartItems.map((item) => (
           <div key={item.id} className="px-2">

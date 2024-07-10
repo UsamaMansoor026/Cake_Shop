@@ -7,6 +7,7 @@ import Carousal from "../components/Carousal";
 import Testimonial from "../components/Testimonial";
 import Blogs from "../components/Blogs";
 import InstagramGallery from "../components/InstagramGallery";
+import ContactForm from "../components/ContactForm";
 
 const Home = () => {
   return (
@@ -25,7 +26,7 @@ const Home = () => {
       </Banner>
 
       {/* Hero Sub Section */}
-      <section className="py-20">
+      <section id="about" className="py-20">
         <h1 className="w-[70%] lg:w-[40%] text-center mx-auto text-[26px] md:text-[30px] lg:text-[40px] leading-[1.3]">
           This is Schilers. Awesome Food Theme. Purchase it and eat Burgers.
         </h1>
@@ -83,6 +84,9 @@ const Home = () => {
 
       {/* Imstagram Gallery */}
       <InstagramGallery />
+
+      {/* Contact Form */}
+      <ContactForm />
     </>
   );
 };

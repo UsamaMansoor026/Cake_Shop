@@ -5,7 +5,7 @@ import { instaImgGallery } from "../assets/assets";
 const InstagramGallery = () => {
   return (
     <>
-      <h2 className="mt-24 text-center text-5xl mb-9">
+      <h2 className="mt-24 text-center text-[36px] md:text-5xl mb-9">
         Follow us on Instagram
       </h2>
       <div className="text-center">

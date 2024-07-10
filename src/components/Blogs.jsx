@@ -4,7 +4,7 @@ import { blogs } from "../assets/assets";
 
 const Blogs = () => {
   return (
-    <>
+    <section id="blog">
       <div className="mx-10 md:mx-24 my-16 flex items-center justify-between customResponsive">
         <h1 className="text-4xl">Our Blogs</h1>
         <Button bgColor={true} border={true}>
@@ -41,7 +41,7 @@ const Blogs = () => {
           </article>
         ))}
       </div>
-    </>
+    </section>
   );
 };
 

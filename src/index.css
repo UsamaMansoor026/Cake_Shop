@@ -10,6 +10,8 @@
 
 * {
   font-family: "Poiret One", sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
 }
 
 .shopName {
