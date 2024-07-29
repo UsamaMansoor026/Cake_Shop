@@ -20,7 +20,7 @@ const Home = () => {
             Delicious Cake
           </h1>
           <Button border={true} bgColor={true}>
-            Order Now
+            <a href="#cakes">Order Now</a>
           </Button>
         </div>
       </Banner>

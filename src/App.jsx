@@ -6,10 +6,16 @@ import Cakes from "./pages/Cakes";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import Cart from "./pages/Cart";
+
+/* Toastify */
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
     <div className="bg-black text-white">
+      <ToastContainer />
       <Navbar />
 
       <Routes>
@@ -17,6 +23,7 @@ function App() {
         <Route path="/cakes" element={<Cakes />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
 
       <Footer />

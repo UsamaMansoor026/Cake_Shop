@@ -55,16 +55,16 @@ const Navbar = () => {
             <Link to="/">home</Link>
           </li>
           <li onClick={handleOff} className="link afterLine">
-            <a href="#about">about</a>
+            <a href="/about">about</a>
           </li>
           <li onClick={handleOff} className="link afterLine">
-            <a href="#cakes">cakes</a>
+            <a href="/cakes">cakes</a>
           </li>
           <li onClick={handleOff} className="link afterLine">
             <a href="#blog">blog</a>
           </li>
           <li onClick={handleOff} className="link afterLine">
-            <a href="#contact">contact</a>
+            <a href="/contact">contact</a>
           </li>
         </ul>
       </header>
